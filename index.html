@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <meta charset="utf-8">
+    <title>Battle Ships task</title>
+    <!-- Add jQuery -->
+    <script src="jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="boards-container"></div>
+        
+    <div id="user-interface">
+        <div class="winMsg"></div>
+        <button onclick="gameEngine.computerBoard.container.style.display = ''">Show Enemy Ships (debug)</button>
+        <button onclick="gameEngine.restartGame()">Restart Game!</button>
+        <button onclick="gameEngine.choosingBoard.selectTile(gameEngine.userBoard, gameEngine.computerBoard)">Take shot!</button>
+    </div>
+    <script src="generatePlayground.js"></script>
+    <script src="generateFleet.js"></script>
+    <script src="gameEngine.js"></script>   
+</body>
+
+</HTML>

@@ -1,0 +1,13 @@
+{
+  "name": "battleships",
+  "version": "1.0.0",
+  "description": "Battleships game for Skillo technical task",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	  "start": "npm run watch",
+	  "watch": "browser-sync start --server --directory --files \"**/*, *.css\""
+  },
+  "author": "MI",
+  "license": "MIT"
+}

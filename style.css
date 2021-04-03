@@ -1,0 +1,150 @@
+.container
+{
+    background: black;
+    display: inline-block;
+    border: 3px solid black;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.board
+{
+    display:grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11,1fr);
+}
+
+.tile
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: 0.1em solid grey;
+}
+
+.tile-missed-hit{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    background-color: #190cca;
+    border: 0.1em solid grey;
+}
+
+.tile-hit{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    background-color: #ca420c;
+    border: 0.1em solid grey;
+}
+
+.notation
+{
+    background: white;
+    border: white;
+}
+
+.battleship1
+{
+    background: url("battleship/image_part_001.png") no-repeat;
+    background-size: cover;
+    border-top: 0.1em solid grey;
+    border-bottom: none;
+    background-color: whitesmoke;
+}
+.battleship2
+{
+    background: url("battleship/image_part_002.png") no-repeat;
+    background-size: cover;
+    border-top: none; 
+    border-bottom: none;
+    background-color: whitesmoke;
+}
+.battleship3
+{
+    background: url("battleship/image_part_003.png") no-repeat;
+    background-size: cover;
+    border-top: none; 
+    border-bottom: none;
+    background-color: whitesmoke;
+}
+.battleship4
+{
+    background: url("battleship/image_part_004.png") no-repeat;
+    background-size: cover;
+    border-top: none; 
+    border-bottom: none;
+    background-color: whitesmoke;
+}
+.battleship5
+{
+    background: url("battleship/image_part_005.png") no-repeat;
+    background-size: cover;
+    border-top: none; 
+    border-bottom: 0.1em solid grey;
+    background-color: whitesmoke;
+}
+.destroyer1
+{
+    background: url("destroyer/image_part_001.png") no-repeat;
+    background-size: cover;
+    border-top: 0.1em solid grey;
+    border-bottom: none;
+    background-color: whitesmoke;
+}
+.destroyer2
+{
+    background: url("destroyer/image_part_002.png") no-repeat;
+    background-size: cover;
+    border-top: none; 
+    border-bottom: none;
+    background-color: whitesmoke;
+}
+.destroyer3
+{
+    background: url("destroyer/image_part_003.png") no-repeat;
+    background-size: cover;
+    border-top: none; 
+    border-bottom: none;
+    background-color: whitesmoke;
+}
+.destroyer4
+{
+    background: url("destroyer/image_part_004.png") no-repeat;
+    background-size: cover;
+    border-top: none; 
+    border-bottom: 0.1em solid grey;
+    background-color: whitesmoke;
+}
+
+.horizontal{
+    transform: rotate(-90deg);
+}
+
+.vertical{
+    transform: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.winMsg{
+    font-size: 80px;
+}
+
+.overlay {
+    background-color: rgba(212, 1, 1, 0.1);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
