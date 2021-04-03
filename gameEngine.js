@@ -162,12 +162,3 @@ GameEngine.prototype.takeTurn =
 
 var gameEngine = new GameEngine();
 gameEngine.startGame();
-
-function Player(board) {
-    this.board = board;
-}
-
-Player.prototype.takeTurn =
-    function () {
-
-    }
